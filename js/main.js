@@ -16,6 +16,27 @@ const app = new Vue({
                 tested: false,
             },
         ],
+       
+        addText: '',
+     },
+        methods:{
+            nuovaRicetta(){
+
+                console.log(this.addText)
+                if(!this.addText == ''){
+                    this.ricette.push({
+                        text: this.addText,
+                        tested: false,
+                    });
+                
+                    this.addText = '';
+                };
+            },
+            elimina(index){
+                console.log(index);
+                this.ricette.splice(index, 1);
+
+            },
         
     },
 });

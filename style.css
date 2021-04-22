@@ -59,7 +59,7 @@
     padding: 10px;
     font-family: 'Cedarville Cursive', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 22px;
     border-bottom: 1px solid #000;
     display: flex;
     justify-content: space-between;
@@ -91,4 +91,9 @@
     padding: 50px;
     background-color: #fef6e4;
     box-shadow: 15px 15px 15px -15px rgba(0,0,0, .7);
+}
+
+i:hover{
+    cursor: pointer;
+    color:#af7eeb;
 }

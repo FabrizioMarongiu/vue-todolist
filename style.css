@@ -35,6 +35,8 @@
 .main{
     flex-grow: 1;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .box-list{
@@ -46,18 +48,21 @@
     background-color: #fef6e4;
     box-shadow: 15px 15px 15px -15px rgba(0,0,0, .7);
     position: relative;
+    
 }
 
 .list{
     list-style: none;
 }
 
-.list li{
+.list .element{
     padding: 10px;
     font-family: 'Cedarville Cursive', cursive;
     font-weight: bold;
     font-size: 30px;
     border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
 }
 
 .box-list::after{
@@ -78,3 +83,12 @@
     cursor: pointer;
 }
 
+.input-box input{
+    width: 400px;
+    height: 100px;
+    border: 2px solid rgb(201, 144, 12);
+    border-radius: 25px;
+    padding: 50px;
+    background-color: #fef6e4;
+    box-shadow: 15px 15px 15px -15px rgba(0,0,0, .7);
+}

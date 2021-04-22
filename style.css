@@ -63,27 +63,35 @@
     border-bottom: 1px solid #000;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.box-list::after{
-    content:'';
+.add{
+    font-size: 30px;
+    text-align: center;
+    line-height:100px;
     display: block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: #af7eeb;
     position: absolute;
-    bottom: -37px;
-    left: 140px;
+    bottom: 40px;
+    left: 400px;
+    box-shadow: 15px 15px 15px -15px rgba(0,0,0, .7);
     transition: transform, 2s;
 }
 
-.box-list:hover::after{
+
+
+.add:hover{
     transform: scale(1.5 ,1.5);
     cursor: pointer;
+     color:rgb(201, 144, 12);
 }
 
 .input-box input{
+    margin-top: 50px;
     width: 400px;
     height: 100px;
     border: 2px solid rgb(201, 144, 12);
@@ -96,4 +104,13 @@
 i:hover{
     cursor: pointer;
     color:#af7eeb;
+}
+
+span.checked{
+    color: red;
+}
+
+button:hover,
+button:focus{
+    background-color:#af7eeb;
 }

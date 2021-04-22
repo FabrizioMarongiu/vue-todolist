@@ -31,11 +31,16 @@
             <main class="main">
                 <div class="box-list">
                     <ul class="list">
-                        <li>Item1</li>
-                        <li>Item1</li>
-                        <li>Item1</li>
-                        <li>Item1</li>
+                        <li class="element" 
+                        v-for="(text, index) in ricette">
+                            <span> {{ ricette.text }} </span>
+                            <i class="far fa-trash-alt"></i>
+                        </li>
                     </ul>
+                </div>
+
+                <div class="input-box">
+                    <input type="text">
                 </div>
             </main>
         </div>

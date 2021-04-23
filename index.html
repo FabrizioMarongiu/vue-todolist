@@ -55,8 +55,9 @@
                 ><i class="fas fa-plus"></i></div>
 
                <section class="text-element"
-               v-show="input">
-                <div class="input-box">
+              >
+                <div class="input-box"
+                 v-show="input">
                     <input type="text"
                     v-model.trim="addText"
                     @keyup.enter="nuovaRicetta"
